@@ -797,7 +797,7 @@ function installAmneziaWG() {
     fi
     apt install -y software-properties-common
     add-apt-repository -y ppa:amnezia/ppa
-    apt install -y amneziawg amneziawg-tools qrencode iptables
+    apt install -y amneziawg amneziawg-tools qrencode iptables linux-tools-common
     elif [[ ${OS} == 'debian' ]]; then
     if ! grep -q "^deb-src" /etc/apt/sources.list; then
         cp /etc/apt/sources.list /etc/apt/sources.list.d/amneziawg.sources.list
