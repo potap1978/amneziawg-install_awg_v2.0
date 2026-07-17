@@ -992,7 +992,7 @@ apt update -y
 
 echo "=== Установка зависимостей ==="
 CURRENT_KERNEL=$(uname -r)
-apt install -y git curl mc zip unzip resolvconf build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison make mokutil sbsigntool shim-signed secureboot-db dkms qrencode iptables linux-headers-${CURRENT_KERNEL}
+apt install -y git curl mc zip unzip resolvconf build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison make mokutil sbsigntool shim-signed secureboot-db dkms qrencode iptables linux-tools-common linux-headers-${CURRENT_KERNEL}
 
 echo "=== Подготовка исходников ядра ==="
 mkdir -p ~/awg-src
